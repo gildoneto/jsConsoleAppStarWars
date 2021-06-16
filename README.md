@@ -14,30 +14,30 @@ O time deverá organizar sua lista de filmes(Exercício do Git) e apresentá-la 
 Estarão considerados prontos apenas os itens que estiverem contemplados na branch da Squad
 
 ### Lista de Atividades
-1 Montar um Objeto para cada filme que contenha(PELO MENOS): Arthur (2h)
+1 Montar um Objeto para cada filme que contenha(PELO MENOS): Arthur (Estimado -> 2h) [Real -> 2h 20m]
   - Nome do Filme
   - Ano de Lançamento
   - Ordenação
   - Imagem(URL)
   - Seção
 
-2 Exibir Todos os Filmes na Sequência definida pelo Time (cronológica): Bárbara (10h)
+2 Exibir Todos os Filmes na Sequência definida pelo Time (cronológica): Bárbara (Estimado -> 10h) [Real -> Xh]
   - Nome do Filme
   - Ano de Lançamento
   - Imagem(URL) Capa
 
-3 Exibir uma Seção para a Trilogia Clássica: Xadai (6h)
+3 Exibir uma Seção para a Trilogia Clássica: Xadai (Estimado -> 6h) [Real -> Xh]
     - Nome do Filme
     - Ano de Lançamento 
 
-4 Exibir uma Seção para a Trilogia Prequel: Gildo (2h)
+4 Exibir uma Seção para a Trilogia Prequel: Gildo (Estimado -> 2h) [Real -> Xh]
   - Nome do Filme
   - Ano de Lançamento
 
-5 Exibir uma Seção para a Nova Trilogia: Helder (2h)
+5 Exibir uma Seção para a Nova Trilogia: Helder (Estimado -> 2h) [Real -> Xh]
   - Nome do Filme
   - Ano de Lançamento
 
-6 Exibir uma Seção para os Filmes Spin Off: Ray (6h)
+6 Exibir uma Seção para os Filmes Spin Off: Ray (Estimado -> 6h) [Real -> Xh]
   - Nome do Filme
   - Ano de Lançamento
