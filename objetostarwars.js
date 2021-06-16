@@ -1,91 +1,83 @@
 // Lista de ojbetos 
-var f1= {
-    nome:"Uma Nova Esperança", 
+var filme1 = {
+    nome: "Uma Nova Esperança", 
     ano: 1977,
-    ordenaçao:1,
-    imagem:<img src="https://www.cine14bis.com.br/site/wp-content/uploads/2019/10/20172772.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg"></img>, 
-    secao:"Trilogia Clássica"
+    ordenacao: 1, 
+    episodio: "IV",
+    imagem: "https://www.cine14bis.com.br/site/wp-content/uploads/2019/10/20172772.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg"    
 }
-
-
-var f2={
-    nome:"O Império Contra Ataca",
+var filme2 = {
+    nome: "O Império Contra Ataca",
     ano: 1980,
-    ordenaçao:2,
-    imagem:<img src="https://br.web.img3.acsta.net/medias/nmedia/18/72/73/89/20535463.jpg"></img>,
-    secao:"Trilogia Clássica"
+    ordenaçao: 2,
+    episodio: "V",
+    imagem: "https://br.web.img3.acsta.net/medias/nmedia/18/72/73/89/20535463.jpg"
 }
-
-var f3={
-    nome:"O retorno Jedi",
+var filme3 = {
+    nome: "O retorno Jedi",
     ano: 1983,
-    ordenaçao:3,
-    imagem:<img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/05/19/22/57/276761.jpg"></img>,
-    secao:"Trilogia Clássica"
+    ordenaçao: 3,
+    episodio: "VI",
+    imagem: "https://br.web.img3.acsta.net/c_310_420/pictures/14/05/19/22/57/276761.jpg"
 }
-
-var f4={
-    nome:"A Ameaça Fantasma",
+var filme4 = {
+    nome: "A Ameaça Fantasma",
     ano: 1993,
-    ordenaçao:4,
-    imagem:<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg/240px-Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg"></img>,
-    secao:"Segunda Trilogia/Prequels"
+    ordenaçao: 4,
+    episodio:"I",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg/240px-Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg"
 }
-
-var f5={
-    nome:"Ataque dos Clones",
-    ano:2002, 
-    ordenaçao:5,
-    imagem:<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/63/Star_Wars_The_Clone_Wars.jpg/250px-Star_Wars_The_Clone_Wars.jpg"></img>,
-    secao:"Segunda Trilogia/Prequels"
+var filme5 = {
+    nome: "Ataque dos Clones",
+    ano: 2002, 
+    ordenaçao: 5,
+    episodio: "II",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/6/63/Star_Wars_The_Clone_Wars.jpg/250px-Star_Wars_The_Clone_Wars.jpg" 
 }
-
-var f6={
-    nome:"A Vingança dos Sith",
-    ano:2005, 
-    ordenaçao:6,
-    imagem:<img src="https://upload.wikimedia.org/wikipedia/pt/5/58/Star_Wars_Epis%C3%B3dio_III_A_Vingan%C3%A7a_dos_Sith.jpg"></img>,
-    secao:"Segunda Trilogia/Prequels"
+var filme6 = {
+    nome: "A Vingança dos Sith",
+    ano: 2005, 
+    ordenaçao: 6,
+    episodio: "III",
+    imagem:"https://upload.wikimedia.org/wikipedia/pt/thumb/5/58/Star_Wars_Epis%C3%B3dio_III_A_Vingan%C3%A7a_dos_Sith.jpg/250px-Star_Wars_Epis%C3%B3dio_III_A_Vingan%C3%A7a_dos_Sith.jpg"
 }
-
-var f6={
-    nome:"O Despertar da Força",
-    ano:2015, 
-    ordenaçao:7,
-    imagem:<img src="https://images-na.ssl-images-amazon.com/images/I/81QWAGT3FdL._AC_SY550_.jpg"></img>,
-    secao:"Terceira Trilogia"
+var filme7 = {
+    nome: "Rogue One",
+    ano: 2016, 
+    ordenaçao: 7,
+    imagem: "https://images-na.ssl-images-amazon.com/images/I/71CcCQcddsL.jpg"
 }
-
-var f7={
-    nome:"Rogue one: Uma História Star Wars",
-    ano: 2016,
-    ordenaçao:8,
-    imagem:<img src="https://images-na.ssl-images-amazon.com/images/I/71CcCQcddsL.jpg"></img>,
-    secao:"Spinn-offs"
+var filme8 = {
+    nome: "Han Solo",
+    ano: 2018,
+    ordenaçao: 8,
+    imagem: "https://poltronanerd.com.br/wp-content/uploads/2018/04/poltrona-han-solo-poster-24abr18-3.jpg"
 }
-
-var f8={
-    nome:"Os últimos jedis",
+var filme9 = {
+    nome: "The Mandalorian",
+    ano: 2019,
+    ordenaçao: 9,
+    imagem: 'https://cdn.europosters.eu/image/750/posters/star-wars-the-mandalorian-dusk-i81805.jpg'
+}
+var filme10 = {
+    nome: "O Despertar da Força",
+    ano: 2015, 
+    ordenaçao: 10,
+    episodio: "VII",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/a/ae/Starwars_06.jpg/250px-Starwars_06.jpg"
+}
+var filme11 = {
+    nome: "Os Últimos Jedi",
     ano: 2017,
-    ordenaçao:9,
-    imagem:<img src="https://cdn.fstatic.com/media/movies/covers/2017/10/Sem_t%C3%ADtulo.png"></img>,
-    secao:"Terceira Trilogia"
+    ordenaçao: 11,
+    episodio: "VIII",
+    imagem:"https://upload.wikimedia.org/wikipedia/pt/thumb/0/0e/Star_Wars_The_Last_Jedi.png/250px-Star_Wars_The_Last_Jedi.png"
 }
-
-var f9={
-    nome:"Han Solo: Uma História Star Wars",
-    ano:2018, 
-    ordenaçao:10
-    imagem:<img src="https://poltronanerd.com.br/wp-content/uploads/2018/04/poltrona-han-solo-poster-24abr18-3.jpg"></img>,
-    secao:"Spinn-offs"
+var filme12 = {
+    nome: "A Ascenção de Skywalker", 
+    ano: 2019,
+    ordenacao: 12,
+    episodio: "IX",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/0/08/Star_Wars_The_Rise_of_Skywalker.jpg/250px-Star_Wars_The_Rise_of_Skywalker.jpg"
 }
-
-var f10={
-    nome:"A Ascenção de Skywalker",
-    ano: 2019
-    ordenaçao:11
-    imagem:<img src="https://blogdojotace.com.br/wp-content/uploads/2020/02/sw9-bd2.jpg"></img>,
-    secao:"Terceira Trilogia"
-}
-
 
