@@ -94,9 +94,9 @@ var filme12 = {
 }
 
 
-//2 Exibir Todos os Filmes na Sequência definida pelo Time
+// 2 Exibir Todos os Filmes na Sequência definida pelo Time
 console.log(
-    `________________________________________________________________________
+`     ________________________________________________________________________
     |                                                                        |
     |           > > > A MELHOR SEQUÊNCIA PARA ASSISTIR STAR WARS < < <       |
     |________________________________________________________________________|
@@ -166,9 +166,9 @@ console.log(
     |Imagem(URL) ______|                               ${filme12.imagem}|
     |________________________________________________________________________|`)
  
-
-
-//3 Exibir uma Seção para a Trilogia Clássica
+    console.log("\n");
+//#############################################################################
+// 3 Exibir uma Seção para a Trilogia Clássica
 console.log(filme1.nome)
 console.log(filme1.ano)
 console.log(filme1.imagem)
@@ -181,10 +181,32 @@ console.log(filme3.nome)
 console.log(filme3.ano)
 console.log(filme3.imagem)
 
-//4 Exibir uma Seção para a Trilogia Prequel
+//#############################################################################
+console.log("\n");
+// 4 Exibir uma Seção para a Trilogia Prequel
+function getPrequel() {
 
+    return console.log(`
+    ATE O MOMENTO TEMOS 3 FILMES DA TRILOGIA PREQUEL
+    
+    SAO ELES:
 
-//5 Exibir uma Seção para a Nova Trilogia
+    ${filme4.nome}
+    LANCADO EM: ${filme4.ano}
+    ------------------
+    ${filme5.nome}
+    LANCADO EM: ${filme5.ano}
+    ------------------
+    ${filme6.nome}
+    LANCADO EM: ${filme6.ano}
+    ------------------
+    `);
+};
+
+getPrequel();
+
+//#############################################################################
+// 5 Exibir uma Seção para a Nova Trilogia
 console.log(`
  _________________________________________________________________________
 |                              Nova Trilogia                              |
@@ -200,22 +222,17 @@ console.log(`
 |_________________________________________________________________________|
 `);
 
-//6 Exibir uma Seção para os Filmes Spin Off
+//#############################################################################
+// 6 Exibir uma Seção para os Filmes Spin Off
 console.log(`
-
 -------------------------------------------------------
 -------------->>>>> Filmes:Spin Off <<<<<--------------
 -------------------------------------------------------
 
-
-
-
 ||||||Filme 7|||||||
-
 
 ${filme7.nome},
 Exibido em : ${filme7.ano},
-
 
 ||||||Filme 8|||||||
 
@@ -227,6 +244,6 @@ Exibido em : ${filme8.ano},
 ${filme9.nome},
 Exibido em : ${filme9.ano},
 
-------------------FIM!------------------
+--------------FIM!--------------
 
 `)
