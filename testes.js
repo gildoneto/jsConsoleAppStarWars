@@ -233,7 +233,7 @@ function retornaOuEncerra(){
 function iniciaPrograma(){
 
     console.log(`
-    ----==== STAR
+    ----==== STAR WARS ====----
     
     DIGITE 1 PARA LISTAR TODAS AS OBRAS AUDIOVISUAIS DA SAGA
     DIGITE 2 PARA LISTAR APENAS OS FILMES DA TRILOGIA ANTIGA
