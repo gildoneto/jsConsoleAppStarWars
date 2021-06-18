@@ -330,7 +330,8 @@ function retornaOuEncerra(){
             iniciaPrograma()
         }
         else {
-            rl.close();
+            console.log(`A OPÇÃO "${inputUsuario}" NÃO EXISTE, MEU PADAWAN. ME AJUDE!.`);
+            retornaOuEncerra();
         } 
 
     });
@@ -428,10 +429,13 @@ function iniciaPrograma(){
             break;
 
             default:
-                rl.on("close", function() {
-                    console.log(`A opcao "${opcao}" nao existe. PROGRAMA ENCERRADO`);
-                    process.exit(0);
-                });
+                console.log(`A OPÇÃO "${opcao}" NÃO EXISTE, MEU CONSAGRADO. ME AJUDE QUE LHE AJUDO.`);
+                retornaOuEncerra();
+                //rl.close();
+                // rl.on("close", function() {
+                //     console.log(`A opcao "${opcao}" nao existe. PROGRAMA ENCERRADO`);
+                //     process.exit(0);
+                // });
         }
     
     });
@@ -439,5 +443,3 @@ function iniciaPrograma(){
 }
 
 iniciaPrograma();
-
-
