@@ -104,7 +104,6 @@ function showAllMovies(filme){
             
             console.log
             (`
-            #######################################################
             
             "${filme.nome}" 
 
@@ -115,14 +114,13 @@ function showAllMovies(filme){
             Clique abaixo para ver o poster 
             ${filme.imagem}
 
-            #######################################################
+            ############################################
             `);
         break;
 
         case "prequel":
             console.log
             (`
-            #######################################################
             
             "${filme.nome}" 
 
@@ -133,14 +131,13 @@ function showAllMovies(filme){
             Clique abaixo para ver o poster 
             ${filme.imagem}
 
-            #######################################################
+            ############################################
             `);
         break;
 
         case "spinoff":
             console.log
             (`
-            #######################################################
             
             "${filme.nome}" 
 
@@ -150,14 +147,13 @@ function showAllMovies(filme){
             Clique abaixo para ver o poster 
             ${filme.imagem}
 
-            #######################################################
+            ############################################
             `);
         break;
 
         case "nova":
             console.log
             (`
-            #######################################################
             
             "${filme.nome}" 
 
@@ -168,14 +164,13 @@ function showAllMovies(filme){
             Clique abaixo para ver o poster 
             ${filme.imagem}
 
-            #######################################################
+            ############################################
             `);
         break;
 
         case 'serie':
             console.log
             (`
-            #######################################################
             
             "${filme.nome}" 
 
@@ -185,7 +180,7 @@ function showAllMovies(filme){
             Clique abaixo para ver o poster 
             ${filme.imagem}
 
-            #######################################################
+            ############################################
             `);
         
         break;
@@ -206,7 +201,6 @@ function showClassicMovies(filme){
 
     console.log
     (`
-    #######################################################
     
     "${filme.nome}" 
 
@@ -217,7 +211,7 @@ function showClassicMovies(filme){
     Clique abaixo para ver o poster 
     ${filme.imagem}
 
-    #######################################################
+    ############################################
     `);
 }
 
@@ -232,7 +226,6 @@ function trilogiaPrequel(filme){
 
     console.log
     (`
-    #######################################################
     
     "${filme.nome}" 
 
@@ -243,7 +236,7 @@ function trilogiaPrequel(filme){
     Clique abaixo para ver o poster 
     ${filme.imagem}
 
-    #######################################################
+    ############################################
     `);
 }
 
@@ -258,7 +251,6 @@ function spinOff(filme){
 
     console.log
     (`
-    #######################################################
     
     "${filme.nome}" 
 
@@ -268,7 +260,7 @@ function spinOff(filme){
     Clique abaixo para ver o poster 
     ${filme.imagem}
 
-    #######################################################
+    ############################################
     `);
 }
 
@@ -283,7 +275,6 @@ function novaTrilogia(filme){
     
     console.log
     (`
-    #######################################################
     
     "${filme.nome}" 
 
@@ -294,7 +285,7 @@ function novaTrilogia(filme){
     Clique abaixo para ver o poster 
     ${filme.imagem}
 
-    #######################################################
+    ############################################
     `);
 }
 
@@ -309,17 +300,16 @@ function series(filme){
     
     console.log
     (`
-    #######################################################
     
     "${filme.nome}" 
 
-    Este serie foi lançada em ${filme.ano} na plataforma de
-    streaming da Disney e ja tem ${filme.temporada} temporadas.
+    Este serie foi lançada em ${filme.ano} na plataforma
+    de streaming da Disney e ja tem ${filme.temporada} temporadas.
     
     Clique abaixo para ver o poster 
     ${filme.imagem}
 
-    #######################################################
+    ############################################
     `);
 }
 
@@ -330,7 +320,9 @@ const rl = readline.createInterface({
 });
 
 function retornaOuEncerra(){
-    rl.question('DESEJA FAZER UMA NOVA CONSULTA? DIGITE "0" PARA SIM | DIGITE "9" PARA ENCERRAR\n', (inputUsuario) => {
+    rl.question(`
+    DESEJA FAZER UMA NOVA CONSULTA?
+    DIGITE "0" PARA SIM OU "9" PARA ENCERRAR A APLICACAO: `, (inputUsuario) => {
         if (inputUsuario == '9'){
             rl.close();
         }
@@ -352,7 +344,7 @@ rl.on('close', () => {
 function iniciaPrograma(){
 
     console.log(`
-    ----==== STAR WARS ====----
+    ----================= STAR WARS =================----
     
     DIGITE 1 PARA LISTAR TODAS AS OBRAS AUDIOVISUAIS DA SAGA
     DIGITE 2 PARA LISTAR APENAS OS FILMES DA TRILOGIA ANTIGA
@@ -365,42 +357,73 @@ function iniciaPrograma(){
     rl.question('DIGITE AQUI: ', function(opcao) {
         switch (opcao){
             case '1':
-                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
+                console.log(`
+            VOCE ESCOLHEU A OPCAO ${opcao}
+            
+            -----======  TODA A FILMOGRAFIA  ======-----`);
                 movies.map(showAllMovies);
-    
+                console.log(`
+            -----====== F I M  D A  L I S T A ======-----
+                `);
                 retornaOuEncerra();
             break;
     
             case '2':
-                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
-                classic.map(showClassicMovies);
+                console.log(`
+        VOCE ESCOLHEU A OPCAO ${opcao}
 
+        ---==== TRILOGIA CLASSICA ====----`);
+                classic.map(showClassicMovies);
+                console.log(`
+    -----====== F I M  D A  L I S T A ======-----
+                `);
                 retornaOuEncerra();
             break;
     
             case '3':
-                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
+                console.log(`
+        VOCE ESCOLHEU A OPCAO ${opcao}
+
+        ---==== TRILOGIA PREQUEL ====----`);
                 prequel.map(trilogiaPrequel);
-
+                console.log(`
+    -----====== F I M  D A  L I S T A ======-----
+                `);
                 retornaOuEncerra();
+            break;
             case '4':
-                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
-                nova.map(novaTrilogia);
+                console.log(`
+        VOCE ESCOLHEU A OPCAO ${opcao}
 
+        ---==== TRILOGIA NOVA ====----`);
+                nova.map(novaTrilogia);
+                console.log(`
+    -----====== F I M  D A  L I S T A ======-----
+                `);
                 retornaOuEncerra();
             break;
     
             case '5':
-                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
-                spinoff.map(spinOff);
+                console.log(`
+        VOCE ESCOLHEU A OPCAO ${opcao}
 
+        ---====  SPIN OFF  ====----`);
+                spinoff.map(spinOff);
+                console.log(`
+    -----====== F I M  D A  L I S T A ======-----
+                `);
                 retornaOuEncerra();
             break;
     
             case '6':
-                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
-                serie.map(series);
+                console.log(`
+        VOCE ESCOLHEU A OPCAO ${opcao}
 
+        ---==== SERIES DA SAGA ====----`);
+                serie.map(series);
+                console.log(`
+    -----====== F I M  D A  L I S T A ======-----
+                `);
                 retornaOuEncerra();
             break;
 
