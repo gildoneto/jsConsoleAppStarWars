@@ -1,6 +1,6 @@
 // Objeto, Funções, Funções que Criam Objetos, Arrays, Arrays de Objeto, Map
 
-movies = [
+filmes = [
     {
         nome: "UMA NOVA ESPERANÇA", 
         ano: 1977,
@@ -96,9 +96,9 @@ movies = [
     }
 ]
 
-movies.map(showAllMovies)
+filmes.map(filmografiaCompleta)
 
-function showAllMovies(filme){
+function filmografiaCompleta(filme){
     
     switch(filme.secao){
         
@@ -192,7 +192,144 @@ function showAllMovies(filme){
         
         break;
         default:
-            console.log('Erro ao gerar exibir filme. Favor entre em contato com a equipe tecnica')
+            console.log('Erro ao exibir filme. Favor entre em contato com a equipe tecnica')
     }
     
+}
+
+const classica = filmes.reduce(function(novoArray, filme){
+    if (filme.secao === 'classica'){
+    novoArray.push(filme)
+    }
+    return novoArray
+}, []);
+
+classica.map(trilogiaClassica)
+
+function trilogiaClassica(filme){
+
+    console.log
+    (`
+    #######################################################
+    
+    "${filme.nome}" 
+
+    Este foi o ${filme.ordenacao} filme da saga.
+    Foi lançado em ${filme.ano} como o Episódio ${filme.episodio}
+    e faz parte da TRILOGIA CLÁSSICA.
+
+    Clique abaixo para ver o poster 
+    ${filme.imagem}
+
+    #######################################################
+    `)
+}
+
+const prequel = filmes.reduce(function(novoArray, filme){
+    if (filme.secao === 'prequel'){
+    novoArray.push(filme)
+    }
+    return novoArray
+}, []);
+
+prequel.map(trilogiaPrequel)
+
+function trilogiaPrequel(filme){
+
+    console.log
+    (`
+    #######################################################
+    
+    "${filme.nome}" 
+
+    Este foi o ${filme.ordenacao} filme da saga.
+    Foi lançado em ${filme.ano} como o Episódio ${filme.episodio}
+    e faz parte da TRILOGIA PREQUEL.
+    
+    Clique abaixo para ver o poster 
+    ${filme.imagem}
+
+    #######################################################
+    `)
+}
+
+const spinoff = filmes.reduce(function(novoArray, filme){
+    if (filme.secao === 'spinoff'){
+    novoArray.push(filme)
+    }
+    return novoArray
+}, []);
+
+spinoff.map(spinOff)
+
+function spinOff(filme){
+
+    console.log
+    (`
+    #######################################################
+    
+    "${filme.nome}" 
+
+    Este foi o ${filme.ordenacao} filme da saga.
+    Foi lançado em ${filme.ano} como um SPIN OFF.
+    
+    Clique abaixo para ver o poster 
+    ${filme.imagem}
+
+    #######################################################
+    `)
+}
+
+const nova = filmes.reduce(function(novoArray, filme){
+    if (filme.secao === 'nova'){
+    novoArray.push(filme)
+    }
+    return novoArray
+}, []);
+
+nova.map(novaTrilogia)
+function novaTrilogia(filme){
+    
+    console.log
+    (`
+    #######################################################
+    
+    "${filme.nome}" 
+
+    Este foi o ${filme.ordenacao} filme da saga.
+    Foi lançado em ${filme.ano} como o Episódio ${filme.episodio}
+    e faz parte da NOVA TRILOGIA.
+    
+    Clique abaixo para ver o poster 
+    ${filme.imagem}
+
+    #######################################################
+    `)
+}
+
+const serie = filmes.reduce(function(novoArray, filme){
+    if (filme.secao === 'serie'){
+    novoArray.push(filme)
+    }
+    return novoArray
+}, []);
+
+serie.map(series)
+
+function series(filme){
+    
+    console.log
+    (`
+    #######################################################
+    
+    "${filme.nome}" 
+
+    Este serie foi lançada em ${filme.ano} na plataforma de
+    streaming da Disney e ja tem ${filme.temporada} temporadas.
+    
+    Clique abaixo para ver o poster 
+    ${filme.imagem}
+
+    #######################################################
+    `)
 }
