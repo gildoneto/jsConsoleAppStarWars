@@ -72,7 +72,7 @@ movies = [
         imagem: "https://bit.ly/3zsIzOJ"
     },
     {
-        nome: "Os Últimos Jedi",
+        nome: "OS ÚLTIMOS JEDI",
         ano: 2017,
         ordenacao: 'décimo',
         episodio: "VIII",
@@ -80,7 +80,7 @@ movies = [
         imagem:"https://bit.ly/3xvaPhw"
     },
     {
-        nome: "A Ascenção de Skywalker", 
+        nome: "A ASCENÇÃO DE SKYWALKER", 
         ano: 2019,
         ordenacao: 'décimo primeiro',
         episodio: "IX",
