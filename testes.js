@@ -206,29 +206,24 @@ const rl = readline.createInterface({
 });
 
 function retornaOuEncerra(){
-    rl.question('DESEJA FAZER UMA NOVA CONSULTA? DIGITE "S" PARA SIM | DIGITE "N" PARA ENCERRAR', function(opcao){
-        switch (opcao){
-            case 'S':
-                rl.on("close", function() {
-                    console.log("\nOBRIGADO PELA VISITA, QUE A FORCA ESTEJA COM VOCE!");
-                    process.exit(0);
-                });
-            break;
-    
-            case 'N':
-                iniciaPrograma()
-            break;
-
-            default:
-                rl.on("close", function() {
-                    console.log(`A opcao "${opcao}" nao existe. PROGRAMA ENCERRADO`);
-                    process.exit(0);
-                });
-
-        }   
+    rl.question('DESEJA FAZER UMA NOVA CONSULTA? DIGITE "0" PARA SIM | DIGITE "9" PARA ENCERRAR\n', (inputUsuario) => {
+        if (inputUsuario == '9'){
+            rl.close();
+        }
+        else if (inputUsuario == '0'){
+            iniciaPrograma()
+        }
+        else {
+            rl.close();
+        } 
 
     });
 }
+
+rl.on('close', () => {
+    console.log("\nOBRIGADO PELA VISITA, QUE A FORCA ESTEJA COM VOCE!");
+    //process.exit(0);
+});
 
 function iniciaPrograma(){
 
@@ -246,32 +241,32 @@ function iniciaPrograma(){
     rl.question('DIGITE AQUI: ', function(opcao) {
         switch (opcao){
             case '1':
-                console.log(` VOCE ESCOLHEU A OPCAO ${opcao}`);
+                console.log(`VOCE ESCOLHEU A OPCAO ${opcao}`);
                 movies.map(showAllMovies);
     
                 retornaOuEncerra()
             break;
     
             case '2':
-                console.log(`Opcao ${opcao} ainda em desenvolvimento`)
+                console.log(`\nOpcao ${opcao} ainda em desenvolvimento`)
                 retornaOuEncerra()
             break;
     
             case '3':
-                console.log(`Opcao ${opcao} ainda em desenvolvimento`)
+                console.log(`\nOpcao ${opcao} ainda em desenvolvimento`)
                 retornaOuEncerra()
             case '4':
-                console.log(`Opcao ${opcao} ainda em desenvolvimento`)
+                console.log(`\nOpcao ${opcao} ainda em desenvolvimento`)
                 retornaOuEncerra()
             break;
     
             case '5':
-                console.log(`Opcao ${opcao} ainda em desenvolvimento`)
+                console.log(`\nOpcao ${opcao} ainda em desenvolvimento`)
                 retornaOuEncerra()
             break;
     
             case '6':
-                console.log(`Opcao ${opcao} ainda em desenvolvimento`)
+                console.log(`\nOpcao ${opcao} ainda em desenvolvimento`)
                 retornaOuEncerra()
             break;
 
@@ -283,7 +278,7 @@ function iniciaPrograma(){
         } 
         
         
-       rl.close();
+       //rl.close();
     
     });
 
